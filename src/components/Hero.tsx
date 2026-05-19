@@ -25,11 +25,13 @@ const Hero: React.FC = () => {
   return (
     <section className="hero-section" ref={heroRef}>
       <div className="hero-bg-image hero-bg-video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/kXOc224m6jo?autoplay=1&mute=1&loop=1&playlist=kXOc224m6jo&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&iv_load_policy=3&fs=0"
-          allow="autoplay; encrypted-media"
+        <video
+          src="/rsmart.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           className="hero-bg-video"
-          title="Background Video"
         />
       </div>
       <div className="hero-overlay" />
