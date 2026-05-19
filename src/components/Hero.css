@@ -13,6 +13,25 @@
   z-index: 0;
 }
 
+.hero-bg-video-wrapper {
+  overflow: hidden;
+  background: #000;
+  pointer-events: none;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  transform: translate(-50%, -50%) scale(1.5);
+  pointer-events: none;
+  border: none;
+}
+
 .hero-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(135deg,

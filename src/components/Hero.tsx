@@ -24,11 +24,14 @@ const Hero: React.FC = () => {
 
   return (
     <section className="hero-section" ref={heroRef}>
-      <img
-        src="https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/IT-park-1.jpg"
-        alt="Rathinam College Campus"
-        className="hero-bg-image"
-      />
+      <div className="hero-bg-image hero-bg-video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/kXOc224m6jo?autoplay=1&mute=1&loop=1&playlist=kXOc224m6jo&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&iv_load_policy=3&fs=0"
+          allow="autoplay; encrypted-media"
+          className="hero-bg-video"
+          title="Background Video"
+        />
+      </div>
       <div className="hero-overlay" />
       <div className="hero-accent-shape" />
       <div className="container hero-content-wrapper">
