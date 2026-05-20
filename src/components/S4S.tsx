@@ -13,7 +13,7 @@ const slides = [
   'https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/50b318d4-b623-4ce4-afe4-cfee12eafaa8.jpg',
   'https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/ab4a6008-48e1-4880-8f5e-29233545bdc9.jpg',
   'https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/5961d84b-8606-442f-b9bc-7416763f0ea6.jpg',
-  'https://rsmart2.rankuhigher.com/wp-content/uploads/2026/03/06.jpg',
+  '/talkonauts-vishva.jpeg',
 ];
 
 const benefits = [
