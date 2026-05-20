@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Menu, X, ArrowRight, GraduationCap } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import './Header.css';
@@ -23,18 +23,7 @@ const Header: React.FC = () => {
     <header className={`main-header ${isScrolled ? 'header-scrolled' : ''}`} ref={headerRef}>
       <div className="navbar-pill">
         <a href="/" className="nav-left">
-          <div className="rgu-logo">
-            <span className="rgu-logo-text">RGU</span>
-          </div>
-          <div className="rgu-text-group">
-            <span className="rgu-title">Rathinam Global University</span>
-            <div className="rgu-badges">
-              <span className="naac-badge">
-                <GraduationCap size={10} />
-                NAAC A++ Accredited
-              </span>
-            </div>
-          </div>
+          <img src="/rsmart-logo.png" alt="Raise Smart School of Technology Logo" className="rsmart-logo-img" />
         </a>
 
         <nav className={`nav-center ${mobileMenuOpen ? 'nav-mobile-open' : ''}`}>
@@ -42,7 +31,7 @@ const Header: React.FC = () => {
             <X size={20} />
           </button>
           <ul className="nav-list">
-            <li><a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About us</a></li>
+            <li><a href="#why-raise-smart" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Why Raise Smart</a></li>
             <li><a href="#admissions" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Admissions</a></li>
             <li><a href="#programmes" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Academics</a></li>
             <li><a href="#placements" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Placements</a></li>
