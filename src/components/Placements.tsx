@@ -56,7 +56,7 @@ const students: Student[] = [
     image: '/placements/clean_kb_mohana_rajan.png',
     logo: '/placements/logo_kb_mohana_rajan.png',
     story: 'Recruited directly to a major technology giant in Silicon Valley as a Principal Systems Architect, designing next-generation high-throughput database fabrics and distributed AI systems.',
-    linkedin: 'https://www.linkedin.com/school/rathinam-group-of-institutions/',
+    linkedin: 'https://www.linkedin.com/school/rathinamcollege/',
   },
   {
     name: 'Devi Sri S',
@@ -69,7 +69,7 @@ const students: Student[] = [
     image: '/placements/clean_devi_sri.png',
     logo: '/placements/logo_devi_sri.png',
     story: 'Joined the core infrastructure protection team at Palo Alto Networks, implementing machine-learning threat models for enterprise low-latency traffic security.',
-    linkedin: 'https://www.linkedin.com/school/rathinam-group-of-institutions/',
+    linkedin: 'https://www.linkedin.com/school/rathinamcollege/',
   },
   {
     name: 'Kanishka R',
@@ -121,7 +121,7 @@ const students: Student[] = [
     image: '/placements/clean_naveen.png',
     logo: '/placements/logo_naveen.png',
     story: 'Engineered machine-learning pipelines to automate enterprise helpdesk ticket workflows, achieving 60% faster resolution rate.',
-    linkedin: 'https://www.linkedin.com/school/rathinam-group-of-institutions/',
+    linkedin: 'https://www.linkedin.com/school/rathinamcollege/',
   },
   {
     name: 'Pradeep J',
@@ -134,7 +134,7 @@ const students: Student[] = [
     image: '/placements/clean_pradeep.png',
     logo: '/placements/logo_pradeep.png',
     story: 'Rebuilt payment gateway pipelines with high-concurrency architecture, reducing transaction failures by over 80%.',
-    linkedin: 'https://www.linkedin.com/school/rathinam-group-of-institutions/',
+    linkedin: 'https://www.linkedin.com/school/rathinamcollege/',
   },
   {
     name: 'Janani K',
