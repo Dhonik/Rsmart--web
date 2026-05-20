@@ -227,24 +227,24 @@
   margin: 0;
 }
 
-.pl-card-company {
-  display: inline-flex;
+.pl-card-logo-container {
+  margin-top: 8px;
+  height: 36px;
+  display: flex;
   align-items: center;
-  margin-top: 6px;
-  padding: 4px 12px;
-  border-radius: 20px;
-  border: 1px solid;
-  font-family: var(--font-sans);
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: .3px;
-  white-space: nowrap;
-  transition: all .3s ease;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.pl-card:hover .pl-card-company {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+.pl-card-logo-img {
+  height: 100%;
+  max-width: 160px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.pl-card:hover .pl-card-logo-container {
+  transform: scale(1.06);
 }
 
 /* ================================================================
@@ -348,17 +348,19 @@
   gap: 0;
 }
 
-.pl-modal-company-pill {
-  align-self: flex-start;
-  padding: 4px 12px;
-  border-radius: 20px;
-  border: 1px solid;
-  font-family: var(--font-sans);
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+.pl-modal-logo-container {
+  margin-bottom: 14px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pl-modal-logo-img {
+  height: 100%;
+  max-width: 200px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .pl-modal-name {

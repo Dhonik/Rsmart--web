@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { X, ArrowRight, Building2 } from 'lucide-react';
+import { X, ArrowRight } from 'lucide-react';
 import './Placements.css';
 
 const LinkedinIcon = ({ size = 14, ...props }: { size?: number } & React.SVGProps<SVGSVGElement>) => (
@@ -82,7 +82,7 @@ const students: Student[] = [
     image: '/placements/clean_kanishka.png',
     logo: '/placements/logo_kanishka.png',
     story: 'Applied cognitive psychology paradigms to interactive digital health platforms, scaling to over 5 million active users globally.',
-    linkedin: 'https://www.linkedin.com/school/rathinam-group-of-institutions/',
+    linkedin: 'https://www.linkedin.com/in/kanishka-r-5ba0421bb/',
   },
   {
     name: 'Aditya S',
@@ -95,7 +95,7 @@ const students: Student[] = [
     image: '/placements/clean_aditya.png',
     logo: '/placements/logo_aditya.png',
     story: 'Integrated multi-agent defensive orchestrators inside enterprise cloud fabrics at Palo Alto Networks, reducing attack surface by 60%.',
-    linkedin: 'https://www.linkedin.com/school/rathinam-group-of-institutions/',
+    linkedin: 'https://www.linkedin.com/in/adithyahere/',
   },
   {
     name: 'Karthick Balashanmugam',
@@ -108,7 +108,7 @@ const students: Student[] = [
     image: '/placements/clean_karthick.png',
     logo: '/placements/logo_karthick.png',
     story: 'Spearheaded web assemblies and high-performance visual processing engines for Autodesk cloud design packages, cutting render time by 45%.',
-    linkedin: 'https://www.linkedin.com/school/rathinam-group-of-institutions/',
+    linkedin: 'https://www.linkedin.com/in/karthick-balashanmugam-0ab069231/',
   },
   {
     name: 'R. Naveen Kumar',
@@ -147,7 +147,7 @@ const students: Student[] = [
     image: '/placements/clean_janani.png',
     logo: '/placements/logo_janani.png',
     story: 'Built intelligent loan processing rules engines, increasing overall processing throughput by 35% across corporate customer portfolios.',
-    linkedin: 'https://www.linkedin.com/school/rathinam-group-of-institutions/',
+    linkedin: 'https://www.linkedin.com/in/janani-k-013803275/',
   },
 ];
 
@@ -198,10 +198,9 @@ const Placements: React.FC = () => {
                 <div className="pl-card-info">
                   <p className="pl-card-name">{s.name}</p>
                   <p className="pl-card-dept">{s.department}</p>
-                  <span className="pl-card-company" style={{ color: s.companyColor, borderColor: `${s.companyColor}22`, background: `${s.companyColor}0d` }}>
-                    <Building2 size={10} style={{ marginRight: 4, flexShrink: 0 }} />
-                    {s.company}
-                  </span>
+                  <div className="pl-card-logo-container">
+                    <img src={s.logo} alt={s.company} className="pl-card-logo-img" />
+                  </div>
                 </div>
               </div>
             ))}
@@ -224,9 +223,9 @@ const Placements: React.FC = () => {
 
                 {/* Right — details */}
                 <div className="pl-modal-right">
-                  <span className="pl-modal-company-pill" style={{ color: selectedStudent.companyColor, background: `${selectedStudent.companyColor}14`, borderColor: `${selectedStudent.companyColor}30` }}>
-                    {selectedStudent.company}
-                  </span>
+                  <div className="pl-modal-logo-container">
+                    <img src={selectedStudent.logo} alt={selectedStudent.company} className="pl-modal-logo-img" />
+                  </div>
                   <h3 className="pl-modal-name">{selectedStudent.name}</h3>
                   <p className="pl-modal-role">{selectedStudent.role}</p>
                   <p className="pl-modal-dept">{selectedStudent.department}</p>
