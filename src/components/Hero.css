@@ -121,10 +121,10 @@ div {
 }
 
 .hero-title-main {
-  font-size: clamp(1.8rem, 4.5vw, 3.6rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.8rem);
   color: #FFFFFF;
-  line-height: 1.15;
-  letter-spacing: -1px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
   margin-bottom: 24px;
   font-weight: 800;
   text-transform: uppercase;
