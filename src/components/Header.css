@@ -92,16 +92,10 @@
   z-index: 1;
 }
 
-.rsmart-logo-img {
-  height: 42px;
+.raise-smart-logo {
+  height: 55px;
   width: auto;
-  border-radius: 8px;
   object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.rsmart-logo-img:hover {
-  transform: scale(1.03);
 }
 
 /* --- CENTER: Navigation --- */
@@ -230,7 +224,6 @@
 /* --- Responsive --- */
 @media (max-width: 1024px) {
   .nav-link { font-size: 12px; padding: 6px 10px; }
-  .rgu-title { font-size: 13px; }
 }
 
 @media (max-width: 991px) {
@@ -246,9 +239,6 @@
     padding: 6px 10px 6px 14px;
     border-radius: 60px;
   }
-
-  .rgu-title { font-size: 12px; }
-  .naac-badge { font-size: 7px; padding: 1px 5px; }
 
   .menu-toggle { display: flex; }
 
@@ -308,6 +298,7 @@
 @media (max-width: 480px) {
   .main-header { padding: 12px 12px 0; }
   .navbar-pill { padding: 5px 8px 5px 10px; }
+  .raise-smart-logo { height: 42px; }
   .rsmart-logo-img { height: 32px; }
   .btn-apply { font-size: 11px; padding: 7px 14px; gap: 6px; }
 }

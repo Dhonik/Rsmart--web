@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import AcademicWings from './components/AcademicWings';
+import WhyRaiseSmart from './components/WhyRaiseSmart';
 import Comparison from './components/Comparison';
 import Placements from './components/Placements';
 import S4S from './components/S4S';
